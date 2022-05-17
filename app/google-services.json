@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "112979322046",
+    "firebase_url": "https://security-system-a7530-default-rtdb.firebaseio.com",
+    "project_id": "security-system-a7530",
+    "storage_bucket": "security-system-a7530.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112979322046:android:8b181c866d9a560ee1aaef",
+        "android_client_info": {
+          "package_name": "com.best_company.securitysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112979322046-nm0h3g8hrl32b587khtp35k3phsotbmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYnGaFSaBsTcTYMHn8RzRijTvuvL_3484"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112979322046-nm0h3g8hrl32b587khtp35k3phsotbmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112979322046:android:9f5d5a65cb5e3116e1aaef",
+        "android_client_info": {
+          "package_name": "com.billion_dollor_company.securutysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112979322046-nm0h3g8hrl32b587khtp35k3phsotbmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYnGaFSaBsTcTYMHn8RzRijTvuvL_3484"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112979322046-nm0h3g8hrl32b587khtp35k3phsotbmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

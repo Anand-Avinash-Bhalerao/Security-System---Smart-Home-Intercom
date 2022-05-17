@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.billion_dollor_company.securutysystem">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecurutySystem">
+        <activity
+            android:name=".activities.main.camera.RingBellActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.main.user.ModifyActivity"
+            android:exported="true"
+            android:label="Modify"
+            android:parentActivityName=".activities.main.user.UserMainActivity"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.main.user.ui.connected_devices.UserConnectedDevicesActivity"
+            android:exported="true"
+            android:label="Devices"
+            android:parentActivityName=".activities.main.user.UserMainActivity"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.main.user.ui.add.AddDeviceActivity"
+            android:exported="true"
+            android:label="Connect a Device"
+            android:parentActivityName=".activities.main.user.UserMainActivity"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.developer.DevActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.main.user.ChatActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.main.user.ui.connected_devices.UserConnectedDevicesActivity"
+            android:theme="@style/Chat" />
+        <activity
+            android:name=".activities.main.camera.PicDisplayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.main.camera.PicCaptureActivity"
+            android:exported="true"
+            android:parentActivityName=".activities.main.camera.CameraMainActivity" />
+        <activity
+            android:name=".activities.main.camera.ConnectedDevicesActivity"
+            android:exported="true"
+            android:label="Connected"
+            android:parentActivityName=".activities.main.camera.CameraMainActivity"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.main.camera.AcceptRequestActivity"
+            android:exported="true"
+            android:label="Requests"
+            android:parentActivityName=".activities.main.camera.CameraMainActivity"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.main.camera.CameraMainActivity"
+            android:exported="true"
+            android:label="Home"
+            android:theme="@style/WithActionBar" />
+        <activity
+            android:name=".activities.main.user.UserMainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_cam_main"
+            android:theme="@style/Theme.SecurutySystem.NoActionBar" />
+        <activity
+            android:name=".activities.register.CameraRegister"
+            android:exported="true" />
+        <activity
+            android:name=".activities.register.UserRegister"
+            android:exported="true" />
+        <activity
+            android:name=".activities.login.Login"
+            android:exported="true" />
+        <activity
+            android:name=".activities.login.LoginTypeSelect"
+            android:exported="true" />
+        <activity
+            android:name=".activities.splash.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home"
+    android:id="@+id/mobile_navigation">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.billion_dollor_company.securutysystem.activities.main.user.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_add_device"
+        android:name="com.billion_dollor_company.securutysystem.activities.main.user.ui.add.AddDeviceActivity"
+        android:label="@string/menu_add_device"
+        tools:layout="@layout/activity_add_device" />
+
+
+    <activity
+        android:id="@+id/nav_connected"
+        android:name="com.billion_dollor_company.securutysystem.activities.main.user.ui.connected_devices.UserConnectedDevicesActivity"
+        android:label="@string/menu_connected"
+        tools:layout="@layout/activity_user_connected_devices" />
+
+</navigation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable-v24/background_rounded_border_grey.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable-v24/background_rounded_medium.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable-v24/background_rounded_receive.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable-v24/background_rounded_send.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable-v24/background_rounded_two.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/background_gradient.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/background_rounded.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/background_rounded_bottom.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/background_rounded_less.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/background_rounded_top.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/login_shape_bk.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/rouneded_button.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/drawable/side_nav_bar.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout-v23/fragment_add_device.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/accept_req_recycler_item.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_accept_request.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_add_device.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_camera_main.xml" value="0.176" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_camera_register.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_chat.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_connected_devices.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_dev.xml" value="0.536" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_login.xml" value="0.12" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_login_type_select.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_modify.xml" value="0.2" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_pic_capture_activity.xml" value="0.1" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_pic_display.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_ring_bell.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_splash_screen.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_user_connected_devices.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_user_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/activity_user_register.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/add_device_fragment.xml" value="0.2" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/app_bar_user_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/chat_recieved_device_item.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/chat_recieved_item.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/chat_send_item.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/connected_device_item.xml" value="0.4" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/connected_fragment.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/content_cam_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/content_user_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/dialog_layout.xml" value="0.2" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/dropdown_textview.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/fragment_add_device.xml" value="0.2" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/fragment_connected.xml" value="0.2" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/fragment_gallery.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/layout/nav_header_user_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/menu/activity_main_drawer.xml" value="0.264" />
+        <entry key="..\:/AndroidDev/KOTLIN/PBL/SecuritySystem/app/src/main/res/menu/user_main.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
