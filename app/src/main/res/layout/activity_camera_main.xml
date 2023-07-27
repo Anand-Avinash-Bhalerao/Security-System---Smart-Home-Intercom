@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/device_code"
             android:gravity="center"
-            android:text="00070"
+            android:text=""
             android:letterSpacing="0.2"
             android:textColor="@color/app_blue"
             android:textSize="48sp"

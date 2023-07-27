@@ -112,30 +112,50 @@ class UserRegister : AppCompatActivity() {
                             val reference: StorageReference = FirebaseStorage.getInstance().reference.child("profile_pictures")
                                     .child(auth.currentUser!!.uid+"."+getExtensionType(imagePath!!))
 
+
                             val uploadTask = reference.putFile(imagePath!!)
                             uploadTask.addOnSuccessListener {
-
-                                reference.child(auth.currentUser!!.uid).downloadUrl.addOnSuccessListener {
+                                reference.downloadUrl.addOnSuccessListener {
                                     Log.d("DOWN_URL","The url is:$it")
-                                    val profileUpdates = UserProfileChangeRequest.Builder()
-                                        .setDisplayName(nameString)
-                                        .setPhotoUri(imagePath)
-                                        .build()
+//                                    val profileUpdates = UserProfileChangeRequest.Builder()
+//                                        .setDisplayName(nameString)
+//                                        .setPhotoUri(imagePath)
+//                                        .build()
 
                                     map["dp_url"] = it.toString()
-                                    user.updateProfile(profileUpdates)
-                                        .addOnCompleteListener {
-                                            Toast.makeText(
-                                                applicationContext,
-                                                "User registered Successfully",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-                                            FirebaseDatabase.getInstance().reference.child("UserDatabase")
-                                                .child(uid).setValue(map)
-                                            progressDialog.setCheck()
-                                            Handler(Looper.getMainLooper()).postDelayed({
-                                                onBackPressed()
-                                            }, 1500)
+//                                    user.updateProfile(profileUpdates)
+//                                        .addOnCompleteListener {
+////                                            Toast.makeText(
+////                                                applicationContext,
+////                                                "User registered Successfully",
+////                                                Toast.LENGTH_SHORT
+////                                            ).show()
+////
+////
+////                                            // mene ui
+////                                            // textbox ka daya
+////                                            progressDialog.setCheck()
+////                                            Handler(Looper.getMainLooper()).postDelayed({
+////                                                onBackPressed()
+////                                            }, 1500)
+//                                        }
+                                    FirebaseDatabase.getInstance().reference.child("UserDatabase")
+                                        .child(uid).setValue(map).addOnCompleteListener {
+                                            if(it.isSuccessful){
+                                                Toast.makeText(
+                                                    applicationContext,
+                                                    "User registered Successfully",
+                                                    Toast.LENGTH_SHORT
+                                                ).show()
+
+
+                                                // mene ui
+                                                // textbox ka daya
+                                                progressDialog.setCheck()
+                                                Handler(Looper.getMainLooper()).postDelayed({
+                                                    onBackPressed()
+                                                }, 1500)
+                                            }
                                         }
                                 }.addOnFailureListener{
                                     Log.d("DOWN_URL","failed")
@@ -156,7 +176,6 @@ class UserRegister : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }, 1500)
-
                         }
                     }
             }

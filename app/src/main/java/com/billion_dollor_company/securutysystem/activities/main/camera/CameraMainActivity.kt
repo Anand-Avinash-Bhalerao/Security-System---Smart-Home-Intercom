@@ -3,6 +3,7 @@ package com.billion_dollor_company.securutysystem.activities.main.camera
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -54,20 +55,21 @@ class CameraMainActivity : AppCompatActivity() {
     }
 
     private fun setTheCode() {
-//        FirebaseDatabase.getInstance().reference.child("DeviceDatabase").child("Devices").child(FirebaseAuth.getInstance().currentUser?.uid.toString()).child("DeviceName").addValueEventListener(object : ValueEventListener {
-//                override fun onDataChange(snapshot: DataSnapshot) {
-//                    if (snapshot.exists()) {
-//                        for (userSnapshot in snapshot.children) {
-//                            val current = userSnapshot.getValue(String::class.java)
-//                            binding.deviceCode.text = current
-//                        }
-//                    }
-//
-//                }
-//
-//                override fun onCancelled(error: DatabaseError) {
-//                }
-//            })
+        FirebaseDatabase.getInstance().reference.child("DeviceDatabase").child("Devices").child(FirebaseAuth.getInstance().currentUser?.uid.toString()).child("Code").addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+
+                        Log.d("FIREBASE_VALUE","The value from the firebase is "+snapshot.value.toString())
+                        val current = snapshot.value.toString()
+                        binding.deviceCode.text = current
+
+                    }
+
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                }
+            })
     }
 
     private fun setName() {

@@ -83,6 +83,7 @@ class UserMainActivity : AppCompatActivity() {
         setProfile()
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(com.billion_dollor_company.securutysystem.R.menu.user_main, menu)

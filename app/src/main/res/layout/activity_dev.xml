@@ -1,393 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/app_blue"
+    tools:context=".Activities.developer.DevActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/contactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:fontFamily="@font/simple_light_rounded"
+        android:text="Contact Me"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/app_blue"
-        tools:context=".Activities.Login.ContactUsActivity">
-
-            <ImageView
-                android:id="@+id/back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:src="@drawable/back"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
-
-
-        <TextView
-            android:id="@+id/contactus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:fontFamily="@font/simple_light_rounded"
-            android:text="Contact Us"
-            android:textColor="@color/white"
-            android:textSize="36sp"
-            app:layout_constraintBottom_toBottomOf="@+id/back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/back" />
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/websiteContainer"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/contactus">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Checkout our "
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Website"
-                android:textColor="@color/orange_red"
-                android:textSize="24sp"
-                android:id="@+id/websiteLink"/>
-
-        </LinearLayout>
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_rounded"
+        android:backgroundTint="@color/white_smoke_faded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactus">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/dev"
+            android:id="@+id/anand_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="6dp"
             android:background="@drawable/background_rounded"
-            android:backgroundTint="@color/white_smoke_faded"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/websiteContainer">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/abhishek_container"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/nameANAND"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginEnd="6dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/background_rounded"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Anand Bhalerao"
+                android:textColor="@color/black"
+                android:textSize="32sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/nameABHI"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center"
-                    android:text="Abhishek\nSoundalgekar"
-                    android:textColor="@color/black"
-                    android:textSize="32sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/abhiEMAIL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="abhisheksoundalegar@gmail.com"
-                    android:textColor="@color/dark_gray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nameABHI" />
-
-                <ImageView
-                    android:id="@+id/linkedABHI"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/linkedin"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/instaABHI"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/abhiEMAIL" />
-
-                <ImageView
-                    android:id="@+id/instaABHI"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/insta"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/gitABHI"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/linkedABHI"
-                    app:layout_constraintTop_toBottomOf="@id/abhiEMAIL"
-                    app:layout_constraintVertical_bias="0.185" />
-
-                <ImageView
-                    android:id="@+id/gitABHI"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/github"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/instaABHI"
-                    app:layout_constraintTop_toBottomOf="@id/abhiEMAIL"
-                    app:layout_constraintVertical_bias="0.185" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/amrit_container"
+            <TextView
+                android:id="@+id/anandEMAIL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/background_rounded"
+                android:gravity="center"
+                android:text="anandbhalerao.l.a3b@gmail.com"
+                android:textColor="@color/dark_gray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/abhishek_container">
+                app:layout_constraintTop_toBottomOf="@id/nameANAND" />
 
-                <TextView
-                    android:id="@+id/nameAMRIT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center"
-                    android:text="Amrit Singh"
-                    android:textColor="@color/black"
-                    android:textSize="32sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/amritEMAIL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="amritsingh@gmail.com"
-                    android:textColor="@color/dark_gray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nameAMRIT" />
-
-                <ImageView
-                    android:id="@+id/linkedAMRIT"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/linkedin"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/instaAMRIT"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/amritEMAIL" />
-
-                <ImageView
-                    android:id="@+id/instaAMRIT"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/insta"
-                    app:layout_constraintBottom_toBottomOf="parent"
-
-                    app:layout_constraintEnd_toStartOf="@+id/gitAMRIT"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/linkedAMRIT"
-                    app:layout_constraintTop_toBottomOf="@id/amritEMAIL"
-                    app:layout_constraintVertical_bias="0.529" />
-
-                <ImageView
-                    android:id="@+id/gitAMRIT"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/github"
-                    app:layout_constraintBottom_toBottomOf="parent"
-
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/instaAMRIT"
-                    app:layout_constraintTop_toBottomOf="@id/amritEMAIL"
-                    app:layout_constraintVertical_bias="0.352" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/anand_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/background_rounded"
-                app:layout_constraintEnd_toEndOf="parent"
+            <ImageView
+                android:id="@+id/linkedANAND"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/linkedin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/instaANAND"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/amrit_container">
+                app:layout_constraintTop_toBottomOf="@id/anandEMAIL" />
 
-                <TextView
-                    android:id="@+id/nameANAND"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center"
-                    android:text="Anand Bhalerao"
-                    android:textColor="@color/black"
-                    android:textSize="32sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/instaANAND"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/insta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gitANAND"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/linkedANAND"
+                app:layout_constraintTop_toBottomOf="@id/anandEMAIL"
+                app:layout_constraintVertical_bias="0.542" />
 
-                <TextView
-                    android:id="@+id/anandEMAIL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="anandbhalerao.l.a3b@gmail.com"
-                    android:textColor="@color/dark_gray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/nameANAND" />
-
-                <ImageView
-                    android:id="@+id/linkedANAND"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/linkedin"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/instaANAND"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/anandEMAIL" />
-
-                <ImageView
-                    android:id="@+id/instaANAND"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/insta"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/gitANAND"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/linkedANAND"
-                    app:layout_constraintTop_toBottomOf="@id/anandEMAIL"
-                    app:layout_constraintVertical_bias="0.542" />
-
-                <ImageView
-                    android:id="@+id/gitANAND"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/github"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/instaANAND"
-                    app:layout_constraintTop_toBottomOf="@id/anandEMAIL"
-                    app:layout_constraintVertical_bias="0.371" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/archisha_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="6dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/background_rounded"
+            <ImageView
+                android:id="@+id/gitANAND"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/github"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/anand_container">
-
-                <TextView
-                    android:id="@+id/namearchisha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center"
-                    android:text="Archisha\nMulmulay"
-                    android:textColor="@color/black"
-                    android:textSize="32sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/archishaEMAIL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="archishamulmulay@gmail.com"
-                    android:textColor="@color/dark_gray"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/namearchisha" />
-
-                <ImageView
-                    android:id="@+id/linkedarchisha"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/linkedin"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/instaarchisha"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/archishaEMAIL" />
-
-                <ImageView
-                    android:id="@+id/instaarchisha"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/insta"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/gitarchisha"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/linkedarchisha"
-                    app:layout_constraintTop_toBottomOf="@id/archishaEMAIL"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <ImageView
-                    android:id="@+id/gitarchisha"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="12dp"
-                    android:src="@drawable/github"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/instaarchisha"
-                    app:layout_constraintTop_toBottomOf="@id/archishaEMAIL"
-                    app:layout_constraintVertical_bias="0.0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/instaANAND"
+                app:layout_constraintTop_toBottomOf="@id/anandEMAIL"
+                app:layout_constraintVertical_bias="0.371" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

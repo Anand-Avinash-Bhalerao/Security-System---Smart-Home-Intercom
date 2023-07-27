@@ -17,6 +17,7 @@ import com.billion_dollor_company.securutysystem.activities.main.user.ModifyActi
 import com.billion_dollor_company.securutysystem.activities.main.user.ui.add.AddDeviceActivity
 import com.billion_dollor_company.securutysystem.activities.main.user.ui.connected_devices.UserConnectedDevicesActivity
 import com.google.android.gms.tasks.Tasks
+import com.google.firebase.auth.FirebaseAuth
 
 
 class HomeFragment : Fragment() {
@@ -35,10 +36,16 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        setTheName()
         handleClicks()
         return root
     }
 
+
+    private fun setTheName(){
+        val name:String = FirebaseAuth.getInstance().currentUser?.displayName.toString()
+        binding.userName.text = name
+    }
 
     private fun handleClicks() {
 
@@ -57,10 +64,6 @@ class HomeFragment : Fragment() {
 
         binding.modify.setOnClickListener{
             startActivity(Intent(context,ModifyActivity::class.java))
-        }
-
-        binding.homeLogo.setOnClickListener {
-            Toast.makeText(context,"Kyu click kiya :)",Toast.LENGTH_SHORT).show()
         }
     }
 

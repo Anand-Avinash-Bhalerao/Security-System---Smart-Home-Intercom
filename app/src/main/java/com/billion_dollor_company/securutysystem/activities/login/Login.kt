@@ -7,7 +7,6 @@ import android.os.Looper
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.billion_dollor_company.securutysystem.MainActivity
 import com.billion_dollor_company.securutysystem.R
 import com.billion_dollor_company.securutysystem.activities.main.camera.CameraMainActivity
 import com.billion_dollor_company.securutysystem.activities.main.user.UserMainActivity
@@ -59,11 +58,11 @@ class Login : AppCompatActivity() {
         }
     }
 
-    private fun setSharedPref(){
+    private fun setSharedPref() {
         val sharedPref = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE)
         val editor = sharedPref.edit()
 
-        editor.apply{
+        editor.apply {
             putInt(LOGIN_TYPE, typeOfLogin)
             apply()
         }
@@ -85,7 +84,8 @@ class Login : AppCompatActivity() {
                 else -> {
                     val dialogBar = LoadingDialogBar(this)
                     dialogBar.showDialog("Logging in, Please Wait", R.raw.loading_dino)
-                    FirebaseAuth.getInstance().signInWithEmailAndPassword(emailString, passwordString)
+                    FirebaseAuth.getInstance()
+                        .signInWithEmailAndPassword(emailString, passwordString)
                         .addOnCompleteListener {
                             if (it.isSuccessful) {
                                 val user = FirebaseAuth.getInstance().currentUser
@@ -95,7 +95,8 @@ class Login : AppCompatActivity() {
                                     if (typeOfLogin == USER_CODE) "UserDatabase" else "DeviceDatabase"
 
                                 val dataRef: DatabaseReference = if (typeOfLogin == USER_CODE) {
-                                    FirebaseDatabase.getInstance().reference.child(typeName).child(uid)
+                                    FirebaseDatabase.getInstance().reference.child(typeName)
+                                        .child(uid)
                                 } else {
                                     FirebaseDatabase.getInstance().reference.child(typeName)
                                         .child("Devices").child(uid)
@@ -166,7 +167,6 @@ class Login : AppCompatActivity() {
             }
         }
     }
-
 
 
 }

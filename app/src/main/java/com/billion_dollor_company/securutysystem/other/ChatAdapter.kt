@@ -24,7 +24,6 @@ class ChatAdapter(
 ) : RecyclerView.Adapter<ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-
         val view:View
         if(viewType == IS_USER){
             view = layoutInflater.inflate(R.layout.chat_send_item, parent, false)
