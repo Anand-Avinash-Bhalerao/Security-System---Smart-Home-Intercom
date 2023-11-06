@@ -117,19 +117,19 @@ class UserRegister : AppCompatActivity() {
                             uploadTask.addOnSuccessListener {
                                 reference.downloadUrl.addOnSuccessListener {
                                     Log.d("DOWN_URL","The url is:$it")
-//                                    val profileUpdates = UserProfileChangeRequest.Builder()
-//                                        .setDisplayName(nameString)
-//                                        .setPhotoUri(imagePath)
-//                                        .build()
+                                    val profileUpdates = UserProfileChangeRequest.Builder()
+                                        .setDisplayName(nameString)
+                                        .setPhotoUri(imagePath)
+                                        .build()
 
                                     map["dp_url"] = it.toString()
-//                                    user.updateProfile(profileUpdates)
-//                                        .addOnCompleteListener {
-////                                            Toast.makeText(
-////                                                applicationContext,
-////                                                "User registered Successfully",
-////                                                Toast.LENGTH_SHORT
-////                                            ).show()
+                                    user.updateProfile(profileUpdates)
+                                        .addOnCompleteListener {
+                                            Toast.makeText(
+                                                applicationContext,
+                                                "User registered Successfully",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
 ////
 ////
 ////                                            // mene ui
@@ -138,7 +138,7 @@ class UserRegister : AppCompatActivity() {
 ////                                            Handler(Looper.getMainLooper()).postDelayed({
 ////                                                onBackPressed()
 ////                                            }, 1500)
-//                                        }
+                                        }
                                     FirebaseDatabase.getInstance().reference.child("UserDatabase")
                                         .child(uid).setValue(map).addOnCompleteListener {
                                             if(it.isSuccessful){
